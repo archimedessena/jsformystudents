@@ -1358,8 +1358,8 @@ console.log(c * g)
 console.log(h)*/
 
 
-// Conversion
-/*var input = prompt("Put in a number");
+ /*Conversion
+var input = prompt("Put in a number");
 console.log(input);
 console.log("Decimal  :", input);
 console.log("Binary  :", Number.parseInt(input, 2));
@@ -1372,50 +1372,251 @@ console.log("Base six  :", Number.parseInt(input, 6));*/
 
 
 
-// converting from decimal to other bases
+/* converting from decimal to other bases
 var input = Number(prompt("Put in a DECIMAL number"));
 console.log(input  +  "in decimal to decimal:", input);
 console.log(input, "in decimal to binary:", input.toString(2));
 console.log(input, "in decimal to octal:", input.toString(8));
-console.log(input, "in decimal to hex:", input.toString(16));
+console.log(input, "in decimal to hex:", input.toString(16));*/
+
+
+/*function sell() {
+  let i = 10;
+  let j =10;
+  if(i < j) {
+    console.log("This is what I have been talking about")
+  
+  }if(i == j){
+    console.log("I know why  I am doing this.")
+  }
+}
+
+
+sell()*/
+
+
+
+
+/*let x = 585858586;
+console.log("$" + x.toLocaleString())
+
+console.log(x.toFixed(2))
+
+let b = 12;
+console.log(typeof(b))*/
+
+
+/*{
+var abs = Math.abs(-36);//36
+var goUp = Math.cell(.00000001);//1
+var goDown = Math.floor(.99999);//0
+var powerUp = Math.pow(3, 2);//9
+let roundUp = Math.round(4.9);//5
+var roundDown = Math.round(5.1)//5
+var isPositive = Math.sign(-Infinity);// -1 (false)
+var getInt = Math.trunc(4.999999); //4
+}*/
+
+
+
+let school = "Sense";
+console.log(school[4]);
+
+
+// concatenating
+let myName = "Sena";
+console.log("My name is  " + myName + "!")
+
+// A simple way of writing the same thing
+//console.log(`My name is ${myName}!`)
+
+let schoolOne = 5;
+console.log(`The number of schools are: ${schoolOne}`);
+
+console.log(`I thought there are only ${schoolOne} schools in Ghana`);
+
+let schoolTwo = "The good and mercy of\ the Lord will always be with us from the begining to the end, and God will not forget us from\ now till thy kingdom come. I will always worship\ God and nothing will stop me from doing that."
+console.log(schoolTwo);
+
+
+
+//Property on strings or string methods
+{
+  var favFood = "tacos";
+  console.log(favFood.charAt(2)) //get the position
+}
+ {
+   console.log(favFood.concat("is my favorite food")) //concat appends a statement to a string or strins
+ }
+
+
+var theLaw = "What is the first law in the Bible? ";
+console.log(theLaw.concat("Love your neighbour as yourself."))
+
+console.log(school.concat(" is common to the people who love it else, most people dislike it likewise my friends"));
+
+
+
+// Finding a string within another string using includes
+{
+  let content = "Today we`ll be talking about string methods  my head and how fun they  are";
+  let search1 = "string";
+  let search2 = "my head";
+  console.log(content.includes(search2))
+  console.log(content.indexOf(search2))
+  // A search inside a search
+  console.log(content.indexOf(search2.indexOf(search2) + 1));
+  // Search from the end
+  console.log(content.lastIndexOf(search1) - 1)
+
+}
+
+/*{
+let level = ["l", "b", "c", "f"];
+let nowOne = "t";
+console.log(level.indexOf(nowOne));
+
+}*/
+
+
+// More on substrings
+// substrings= it basically produces a string out of strings
+let content1 = "She is the love of my life";
+console.log(content1.substring(1, 10))
+console.log(content1.substr(2, 5))
+
+// slice works similar to substring
+
+// how to moddify a string
+let content2 = "      \t\nToday we will be talking about string methods and how fun they are \t\n";
+console.log(content2.trim());
+
+// repetiting string or numbers
+let adjoa = "tick tock";
+console.log(adjoa.repeat(4));
+ 
+// the use of search , split, replace
+let contentFour;
+contentFour = "Neatness is next to goddliness";
+console.log(contentFour.split(" ")); 
+console.log(content1.split(" "));
+console.log(content1.replace("She", "He"))
+console.log(content2.replace("Today", "Tomorrow"));
+console.log(content2.search("a"))
+
+
+
+let kofi1 = "Sell the tomatoes and give me the change and let us know how to handle the rest of the issue. The love of the Lord should be ur utmost";
+console.log(kofi1.includes("how"))
+console.log(kofi1.indexOf("how"))
+
+
+// Functions and objects 
+// objects can also functions in them
+function neat() {
+  let love = 345;
+  let sex = 44;
+  if(love < sex) {
+    return love * sex / love;
+  }else
+  return "it is normal";
+}
+console.log(neat())
+
+
+
+let hovr = {nam: "one", aga: "name"};
+console.log(hovr.nam);
+console.log(hovr.nam.replace("one", "thirty"))
+
+
+
+let tea = {
+  milk: 12,
+  milo: 14,
+  nido: 20,
+ 
+  powder: function(){
+    if(`${this.milk}` < `${this.milo}`){
+      console.log("I knew this government is here to misuse our funds")
+    }
+}
+  }
+
+tea.powder();
+
+
+// nested objects
+// myObject: {sweetProperty:"Hello Friends"}
+//way of calling say position.myObject.sweetProperty
 
 
 
 
 
+//JSON - Javascript notation similar or same to objects
+
+
+//conditional statement
+//>comparision operators(=, ==, ===, !==,<=, =>)
+//logical operators (NOT!, AND&&, OR||)
+// NOT 
+//AND = BOTH MUST BE TRUE, read on this
+// You can use multiple logical opeators together but it is advisable to do that in nested conditional statement
+// Boolean algebra is a good book for that
 
 
 
 
+/*Switch statement
+
+/*let user = prompt("What did you eat today?");
+
+switch(user) {
+  case "fufu":
+    console.log("My favorite");
+    break;
+
+  case "banku":
+    console.log("I hate the delicacy");
+    break;
+  
+  case "mango":
+    console.log("Is that also called food")
+    break;
+  default:
+    console.log("I guess you are not here")
+     break;
+
+}*/
 
 
 
 
+let soldiers = prompt("Are you a soldier?");
+let rs = soldiers;
+let now = rs.toLocaleUpperCase();
+
+
+switch(now) {
+  case "YES":
+    console.log("You are too weak to be a soldier")
+    break;
+  case "NO":
+    console.log("No wonder you are soft and weak")
+    break;
+
+  default:
+    console.log("Go home and eat for your parents are waiting for you")
+    break;
+}
+console.log(soldiers)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let x = [ 1, 2, 3];
+x[10] = 11;
+console.log(x);
 
 
 
