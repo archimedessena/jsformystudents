@@ -1593,6 +1593,7 @@ switch(user) {
 
 
 
+/* switch statements
 let soldiers = prompt("Are you a soldier?");
 let rs = soldiers;
 let now = rs.toLocaleUpperCase();
@@ -1610,13 +1611,373 @@ switch(now) {
     console.log("Go home and eat for your parents are waiting for you")
     break;
 }
-console.log(soldiers)
+console.log(soldiers)*/
 
 
 
-let x = [ 1, 2, 3];
+/*let x = [ 1, 2, 3];
 x[10] = 11;
-console.log(x);
+console.log(x);*/
+
+/* A single line if statement
+let man = prompt("Are u here?");
+if(man == "yes"){console.log("Then stop fooling")}
+else {console.log("You are good to go")};*/
+
+
+/*TERNARY OPERATOR
+let goodies = prompt("What is my favorite color?");
+let answer = goodies === "red" ?  20 : 5;
+console.log(answer);
+
+
+goodies === "yes" ? console.log("10") : console.log("0");*/
+//if statement can be used for this as well
+/*
+let male = prompt("Do u like kenkey");
+answer1 = male === "maybe" ? console.log("U just won 10 bugs") : console.log("U won for urself nothing");*/
+
+
+
+/* Loops writing of loops comes with the acronym ICU 
+Types: while, do while and for
+let cover = 10; initialization
+while (cover < 15){  
+  console.log(cover);
+  cover++ update
+}*/
+
+
+let i = 1000;//initialization
+do{
+  console.log(i); // code
+  i++ //update
+} while(i < 10);// condition
+
+
+for(let i = 0; i < 10; i++) {
+  console.log(i)
+}
+
+for(let kofi = 10; kofi < 20; kofi++){
+  console.log(kofi);
+}
+  
+/* More examples on loops
+ do while loop do something ones
+{
+let password;
+do {
+    password = prompt("What is the password?");
+
+} while(password.toLowerCase() !== "let me in");
+
+}*/
+
+/* for loop*/
+{
+  for (let i = 0; i < 10; i++){
+    console.log(i)
+  }
+}
+
+{
+  let list = [1, 3, 6, 7, 8, 0];
+  for (let i = 0; i < list.length; i++){
+    console.log(list[3])
+  }
+}
+
+
+let fun = [1, 3, 5, 7, 'King', 'men'];
+for(let c = 0; c < fun.length; c++){
+  console.log(fun[4])
+}
+
+
+/*let myString = "Search this string baby";
+let charToSearch = "c";
+for(let i = 0; i< myString.length; i++){
+  if(myString[i] === charToSearch){
+    console.log(myString[i] + " is found at index " + i);
+  }
+}*/
+
+
+// break and continue keywords
+// break breaks whatever line or function we are in
+// continue do otherwise
+
+/*let myString1 = "Search this is c c string c c c baby  c c c";
+let charToSearch1 = "c";
+for (let i = 0; i < myString1.length; i++){
+  if(myString1 === 'a' || myString1 === 'i' || myString1[i] === 'e'){
+    continue;
+  }
+  console.log(myString1[i]);
+}*/
+
+//Nested loops
+/*{
+  for(let i = 10; i > 0; i--){
+    for(let j = 0; j < 10; j++){
+      console.log(j, i)
+    }
+  }*/
+
+
+let d = document.getElementById("destination");
+for(let i = 0; i< 10; i++){
+  for(let k = i; k >= 0; k--){
+    d.append(k + " ");
+  }
+  var br = document.createElement("br");
+  d.appendChild(br);
+}
+
+
+
+//ARRAYS
+let gee = [3, 5, 6, "neat", 56, "meen", [4, 5, 6, 6],  67];
+console.log(gee.length - 1);
+gee[100] = 12;
+console.log(gee)
+console.log(gee[100])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
